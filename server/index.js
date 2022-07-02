@@ -8,7 +8,8 @@ const app = express();
 app.use(cors());
 
 const createUser = (input) => {
-    const id = Date.now()
+    const id = users.length + 1
+ 
     return {
         id, ...input
     }
